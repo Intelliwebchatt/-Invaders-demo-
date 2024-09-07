@@ -27,32 +27,37 @@
             --highlight-color: #FF851B;
             --button-color: #FFDC00;
             --button-text-color: #000;
+            --glass-color: rgba(255, 255, 255, 0.2);
+            --glass-border: rgba(255, 255, 255, 0.3);
         }
 
         body {
             font-family: Arial, sans-serif;
-            background-color: var(--background-color);
+            background: linear-gradient(135deg, #001f3f 0%, #39CCCC 100%);
             color: var(--primary-color);
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: var(--secondary-color);
+            background: linear-gradient(to bottom, rgba(0, 31, 63, 0.8), rgba(57, 204, 204, 0.8)), url('https://example.com/planet-moolah-header.webp');
             color: white;
             text-align: center;
             padding: 20px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         header img {
-            width: 100%;
-            height: auto;
-            max-height: 500px;
-            object-fit: cover;
+            display: none;
         }
 
         main {
@@ -64,10 +69,16 @@
         .game-info {
             text-align: center;
             padding: 30px;
+            background: var(--glass-color);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .game-info h2 {
             color: var(--highlight-color);
+            font-size: 2rem;
         }
 
         .features {
@@ -80,15 +91,18 @@
             flex: 1 1 30%;
             margin: 10px;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
+            background: var(--glass-color);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .feature h3 {
             color: var(--primary-color);
             margin-bottom: 10px;
+            font-size: 1.5rem;
         }
 
         .cta {
@@ -97,32 +111,41 @@
         }
 
         .cta button {
-            background-color: var(--button-color);
+            background: url('https://example.com/spaceship-icon.png') no-repeat center center;
+            background-size: contain;
             color: var(--button-text-color);
             padding: 15px 30px;
             border: none;
-            border-radius: 8px;
+            border-radius: 50%;
             font-size: 1.2rem;
             cursor: pointer;
-            transition: background-color 0.3s;
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .cta button:hover {
-            background-color: #FFD700;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #FFD700;
         }
 
         footer {
             background-color: var(--primary-color);
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            background: linear-gradient(to top, #001f3f, #39CCCC);
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="https://example.com/planet-moolah-header.webp" alt="Journey to the Planet Moolah Header">
         <h1>Journey to the Planet Moolah</h1>
         <p>Your chance to win big in the cosmic world of slot games!</p>
     </header>
@@ -150,7 +173,7 @@
 
         <section class="cta">
             <h2>Ready to Play?</h2>
-            <button onclick="window.location.href='https://www.yoursite.com/play-moolah'">Play Now</button>
+            <button onclick="window.location.href='https://www.yoursite.com/play-moolah'"></button>
         </section>
     </main>
 
