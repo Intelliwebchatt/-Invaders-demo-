@@ -21,7 +21,7 @@ header {
 .header-image {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Adjust the height as needed */
+    max-height: 400px; /* Adjust the height if necessary */
     object-fit: cover;
 }
 
@@ -36,12 +36,21 @@ header {
     text-shadow: 2px 2px 4px #003366; /* Royal blue shadow */
 }
 
+/* Slot Machine Container */
+.slot-machine-container {
+    background-color: #003366; /* Royal Blue */
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* 3D effect for the slot machine box */
+}
+
 /* Slot Machine Layout */
 .slot-machine {
     display: flex;
     justify-content: center;
-    gap: 2rem; /* More space between reels for better slot machine look */
-    margin-top: 2rem;
+    gap: 1.5rem; /* More space between reels */
 }
 
 .reel {
@@ -53,9 +62,24 @@ header {
     justify-content: center;
     align-items: center;
     font-family: 'Fredoka One', sans-serif;
-    font-size: 4rem; /* Larger font for reels */
+    font-size: 3rem; /* Larger font for reels */
     color: #C41E3A; /* Rich red for symbols */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Makes the reels pop */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Make the reels pop */
+}
+
+/* Scoreboard */
+.scoreboard {
+    margin-top: 2rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.score {
+    font-size: 2rem;
+    color: #FFD700; /* Golden yellow */
+    background-color: #003366; /* Royal blue background */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Control Buttons */
@@ -63,7 +87,7 @@ header {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1rem; /* Proper spacing between buttons */
 }
 
 button {
@@ -75,6 +99,7 @@ button {
     margin: 0.5rem;
     cursor: pointer;
     transition: transform 0.2s ease;
+    font-size: 1.2rem; /* Larger button text */
 }
 
 button:active {
@@ -91,21 +116,4 @@ button:active {
     background-color: #003366; /* Royal blue */
     color: #FFD700; /* Golden yellow text */
     box-shadow: 0 0 10px #003366;
-}
-
-/* Scoreboard */
-.scoreboard {
-    margin-top: 2rem;
-}
-
-.score {
-    font-family: 'Crimson Text', serif;
-    font-size: 2rem;
-    color: #FFD700; /* Golden yellow */
-    background-color: #003366; /* Royal blue background */
-    padding: 1rem;
-    border-radius: 10px;
-    display: inline-block;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
