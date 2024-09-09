@@ -21,8 +21,8 @@ header {
 .header-image {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Adjust the height if necessary */
-    object-fit: cover; /* Keeps the image covering the entire width while maintaining aspect ratio */
+    max-height: 400px; /* Adjust the height as needed */
+    object-fit: cover;
 }
 
 .title {
@@ -36,30 +36,34 @@ header {
     text-shadow: 2px 2px 4px #003366; /* Royal blue shadow */
 }
 
-/* Slot Machine Reels */
+/* Slot Machine Layout */
 .slot-machine {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem; /* More space between reels for better slot machine look */
+    margin-top: 2rem;
 }
 
 .reel {
     background-color: #FFF8DC; /* Light cream background */
     border-radius: 15px;
-    width: 100px;
+    width: 120px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Fredoka One', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem; /* Larger font for reels */
     color: #C41E3A; /* Rich red for symbols */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Makes the reels pop */
 }
 
 /* Control Buttons */
 .controls {
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 button {
@@ -101,4 +105,7 @@ button:active {
     background-color: #003366; /* Royal blue background */
     padding: 1rem;
     border-radius: 10px;
+    display: inline-block;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
