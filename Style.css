@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to top, #228B22, #87CEEB); /* Forest green to sky blue */
     color: #FFF8DC; /* Light cream */
+    text-align: center;
 }
 
 .container {
@@ -21,7 +22,7 @@ header {
 .header-image {
     width: 100%;
     height: auto;
-    max-height: 400px; /* Adjust the height if necessary */
+    max-height: 400px;
     object-fit: cover;
 }
 
@@ -32,48 +33,49 @@ header {
     transform: translate(-50%, -50%);
     font-family: 'Crimson Text', serif;
     font-size: 3rem;
-    color: #FFD700; /* Golden yellow */
-    text-shadow: 2px 2px 4px #003366; /* Royal blue shadow */
+    color: #FFD700;
+    text-shadow: 2px 2px 4px #003366;
 }
 
 /* Slot Machine Container */
 .slot-machine-container {
-    background-color: #003366; /* Royal Blue */
-    border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    background-color: #003366; /* Royal blue background */
+    padding: 1.5rem;
+    border-radius: 20px;
     display: inline-block;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* 3D effect for the slot machine box */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow to mimic slot machine */
+    margin-bottom: 2rem;
 }
 
 /* Slot Machine Layout */
 .slot-machine {
     display: flex;
     justify-content: center;
-    gap: 1.5rem; /* More space between reels */
+    align-items: center;
+    gap: 2rem; /* Space between reels */
 }
 
 .reel {
-    background-color: #FFF8DC; /* Light cream background */
-    border-radius: 15px;
+    background-color: #FFF8DC;
     width: 120px;
     height: 150px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Fredoka One', sans-serif;
-    font-size: 3rem; /* Larger font for reels */
-    color: #C41E3A; /* Rich red for symbols */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Make the reels pop */
+    font-size: 4rem; /* Bigger symbols */
+    color: #C41E3A; /* Symbol color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Scoreboard */
 .scoreboard {
-    margin-top: 2rem;
-    font-family: 'Crimson Text', serif;
+    margin-top: 1rem;
 }
 
 .score {
+    font-family: 'Crimson Text', serif;
     font-size: 2rem;
     color: #FFD700; /* Golden yellow */
     background-color: #003366; /* Royal blue background */
@@ -84,10 +86,10 @@ header {
 
 /* Control Buttons */
 .controls {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Proper spacing between buttons */
+    gap: 1.5rem; /* Space between buttons */
+    margin-top: 2rem;
 }
 
 button {
@@ -96,10 +98,9 @@ button {
     border: none;
     border-radius: 10px;
     padding: 1rem 2rem;
-    margin: 0.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: transform 0.2s ease;
-    font-size: 1.2rem; /* Larger button text */
 }
 
 button:active {
@@ -107,13 +108,13 @@ button:active {
 }
 
 .spin-btn {
-    background-color: #C41E3A; /* Rich red */
-    color: #FFF8DC; /* Light cream text */
+    background-color: #C41E3A;
+    color: #FFF8DC;
     box-shadow: 0 0 10px #C41E3A;
 }
 
 .max-bet-btn, .autoplay-btn {
-    background-color: #003366; /* Royal blue */
-    color: #FFD700; /* Golden yellow text */
+    background-color: #003366;
+    color: #FFD700;
     box-shadow: 0 0 10px #003366;
 }
