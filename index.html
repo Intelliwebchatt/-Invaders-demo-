@@ -15,17 +15,25 @@
             <h1 class="title">Fairytale Slot Machine</h1>
         </header>
 
-        <!-- Slot Machine Reels -->
-        <section class="slot-machine">
-            <div class="reel" id="reel1">
-                <span>🍎</span>
+        <!-- Slot Machine Box -->
+        <section class="slot-machine-container">
+            <!-- Slot Machine Reels -->
+            <div class="slot-machine">
+                <div class="reel" id="reel1">
+                    <span>🍎</span>
+                </div>
+                <div class="reel" id="reel2">
+                    <span>👑</span>
+                </div>
+                <div class="reel" id="reel3">
+                    <span>💎</span>
+                </div>
             </div>
-            <div class="reel" id="reel2">
-                <span>👑</span>
-            </div>
-            <div class="reel" id="reel3">
-                <span>💎</span>
-            </div>
+
+            <!-- Scoreboard/Winnings Display -->
+            <section class="scoreboard">
+                <div class="score">Winnings: 0</div>
+            </section>
         </section>
 
         <!-- Control Buttons -->
@@ -33,11 +41,6 @@
             <button class="spin-btn">Spin</button>
             <button class="max-bet-btn">Max Bet</button>
             <button class="autoplay-btn">Autoplay</button>
-        </section>
-
-        <!-- Scoreboard/Winnings Display -->
-        <section class="scoreboard">
-            <div class="score">Winnings: 0</div>
         </section>
     </div>
 
