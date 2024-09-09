@@ -1,1 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to top, #228B22, #87CEEB); /* Forest green to sky blue */
+    color: #FFF8DC; /* Light cream */
+}
 
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Header/Title Styles */
+header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust the height if necessary */
+    object-fit: cover; /* Keeps the image covering the entire width while maintaining aspect ratio */
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Crimson Text', serif;
+    font-size: 3rem;
+    color: #FFD700; /* Golden yellow */
+    text-shadow: 2px 2px 4px #003366; /* Royal blue shadow */
+}
+
+/* Slot Machine Reels */
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.reel {
+    background-color: #FFF8DC; /* Light cream background */
+    border-radius: 15px;
+    width: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 3rem;
+    color: #C41E3A; /* Rich red for symbols */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Control Buttons */
+.controls {
+    margin-top: 2rem;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.spin-btn {
+    background-color: #C41E3A; /* Rich red */
+    color: #FFF8DC; /* Light cream text */
+    box-shadow: 0 0 10px #C41E3A;
+}
+
+.max-bet-btn, .autoplay-btn {
+    background-color: #003366; /* Royal blue */
+    color: #FFD700; /* Golden yellow text */
+    box-shadow: 0 0 10px #003366;
+}
+
+/* Scoreboard */
+.scoreboard {
+    margin-top: 2rem;
+}
+
+.score {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    color: #FFD700; /* Golden yellow */
+    background-color: #003366; /* Royal blue background */
+    padding: 1rem;
+    border-radius: 10px;
+}
