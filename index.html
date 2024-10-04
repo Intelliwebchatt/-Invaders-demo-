@@ -27,7 +27,6 @@
             --secondary-color: #555555; /* Mid-gray */
             --text-color: #ffffff; /* White text */
             --background-color: #1a1a1a; /* Deep black background */
-            --button-color: #888888; /* Gray button */
             --button-text-color: #ffffff; /* White text for button */
             --header-gradient: linear-gradient(145deg, #0b0b0b, #1a1a1a, #333333); /* Glossy black gradient */
             --card-gradient: linear-gradient(135deg, #1a1a1a, #2f2f2f); /* Dark glossy gradient for cards */
@@ -91,21 +90,18 @@
             text-align: center;
         }
 
-        .cta button {
-            background-color: var(--button-color);
-            color: var(--button-text-color);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
+        /* Call-to-action button as an image */
+        .cta img {
+            width: 200px; /* Set width for the image */
+            height: auto;
             cursor: pointer;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-top: 1rem;
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            transition: transform 0.3s ease; /* Smooth hover effect */
         }
 
-        .cta button:hover {
-            background-color: #666666; /* Darker gray on hover */
+        .cta img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
         }
 
         #contact-form input,
@@ -167,7 +163,10 @@
         <section class="section cta">
             <h2>Book Your Appointment</h2>
             <p>Schedule a session with Dawn today and get ready to transform your hair. Click below to start your booking process!</p>
-            <button>Book Now</button>
+            <!-- Replaced button with an image -->
+            <a href="#contact">
+                <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/refs/heads/main/2024-10-03-22-49-02-150.jpg" alt="Book Now">
+            </a>
         </section>
 
         <section id="contact" class="section">
