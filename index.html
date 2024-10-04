@@ -1,49 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fairytale Slot Machine</title>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Roboto:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Dawn Lanier | Professional Hair Stylist</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Book an appointment with Dawn Lanier, a professional hair stylist with over 10 years of experience.">
+
+    <!-- Meta Robots Tag -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.dawnlanierstylist.com">
+
+    <!-- Preconnect and Preload Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Inline Critical CSS -->
+    <style>
+        :root {
+            --primary-color: #a52a2a;
+            --secondary-color: #ff4500;
+            --text-color: #333;
+            --background-color: #f8f8f8;
+            --button-color: #ff6347;
+            --button-text-color: #fff;
+            --header-gradient: linear-gradient(135deg, #8b0000, #ff6347);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+        }
+
+        header {
+            background: var(--header-gradient);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta button {
+            background-color: var(--button-color);
+            color: var(--button-text-color);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta button:hover {
+            background-color: #e55342;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+        }
+
+        #contact-form button[type="submit"] {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Header with Image -->
-        <header>
-            <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/main/1724992997882.jpg" alt="Slot Machine Header" class="header-image">
-            <h1 class="title">Fairytale Slot Machine</h1>
-        </header>
+    <header>
+        <h1>Dawn Lanier</h1>
+        <p>Expert Hair Stylist | Professional Care for Your Unique Style</p>
+    </header>
 
-        <!-- Slot Machine Container -->
-        <section class="slot-machine-container">
-            <!-- Slot Machine Reels -->
-            <div class="slot-machine">
-                <div class="reel">
-                    <span>🍎</span>
-                </div>
-                <div class="reel">
-                    <span>👑</span>
-                </div>
-                <div class="reel">
-                    <span>💎</span>
-                </div>
-            </div>
-
-            <!-- Scoreboard/Winnings Display -->
-            <section class="scoreboard">
-                <div class="score">Winnings: 0</div>
-            </section>
+    <main>
+        <section class="section">
+            <h2>About Dawn</h2>
+            <p>With over a decade of experience, Dawn Lanier is your go-to hair stylist for precision cuts, vibrant colors, and styling expertise. Whether you're looking for a fresh new look or routine maintenance, you're in great hands.</p>
         </section>
 
-        <!-- Control Buttons -->
-        <section class="controls">
-            <button class="spin-btn">Spin</button>
-            <button class="max-bet-btn">Max Bet</button>
-            <button class="autoplay-btn">Autoplay</button>
+        <section class="section cta">
+            <h2>Book Your Appointment</h2>
+            <p>Schedule a session with Dawn today and get ready to transform your hair. Click below to start your booking process!</p>
+            <button onclick="window.location.href='#contact'">Book Now</button>
         </section>
-    </div>
 
-    <script src="script.js"></script>
+        <section id="contact" class="section">
+            <h2>Contact Dawn</h2>
+            <form id="contact-form" method="POST" action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="appointment" placeholder="Need Appointment?" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2>Secure Payment</h2>
+            <p>For your convenience, we accept secure online payments through Stripe. You can securely pay for your appointment or hair styling services by clicking the button below.</p>
+            <!-- Stripe Payment Placeholder -->
+            <form action="/your-server-endpoint" method="POST">
+                <button type="submit">Pay with Stripe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Dawn Lanier | All Rights Reserved</p>
+    </footer>
+
+    <!-- Chatbot Integration -->
+    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="36588"></script>
 </body>
+
 </html>
