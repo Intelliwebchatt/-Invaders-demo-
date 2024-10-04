@@ -43,16 +43,16 @@
             background: var(--header-gradient);
             color: white;
             display: flex;
-            align-items: center;
             justify-content: center;
-            padding: 2rem;
+            align-items: center;
+            padding: 1.5rem; /* Skinnier header */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         header .header-content {
             display: flex;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1000px; /* Narrowed content frame */
             width: 100%;
             justify-content: space-between;
         }
@@ -68,28 +68,29 @@
         }
 
         header .profile-image-card img {
-            width: 120px;
-            height: 120px;
+            width: 100px; /* Smaller image */
+            height: 100px;
             border-radius: 12px;
             object-fit: cover;
         }
 
         header .header-text {
             text-align: left;
+            padding-left: 20px; /* Added space between text and image */
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem; /* Slightly smaller header text */
             margin: 0.5rem 0;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin: 0;
         }
 
         main {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 2rem auto;
             padding: 1rem;
         }
@@ -102,6 +103,10 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .cta {
+            text-align: center; /* Centered text */
+        }
+
         .cta button {
             background-color: var(--button-color);
             color: var(--button-text-color);
@@ -112,6 +117,7 @@
             cursor: pointer;
             transition: background-color 0.3s;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 1rem;
         }
 
         .cta button:hover {
@@ -183,7 +189,7 @@
         <section class="section cta">
             <h2>Book Your Appointment</h2>
             <p>Schedule a session with Dawn today and get ready to transform your hair. Click below to start your booking process!</p>
-            <button onclick="window.location.href='#contact'">Book Now</button>
+            <button>Book Now</button> <!-- Centered button -->
         </section>
 
         <section id="contact" class="section">
