@@ -26,7 +26,7 @@
             --primary-color: #000000; /* Glossy black */
             --secondary-color: #555555; /* Mid-gray */
             --text-color: #ffffff; /* White text */
-            --background-color: #f8f8f8;
+            --background-color: #1a1a1a; /* Deep black background */
             --button-color: #888888; /* Gray button */
             --button-text-color: #ffffff; /* White text for button */
             --header-gradient: linear-gradient(145deg, #0b0b0b, #1a1a1a, #333333); /* Glossy black gradient */
@@ -36,7 +36,7 @@
         body {
             font-family: Arial, sans-serif;
             color: var(--text-color);
-            background-color: var(--background-color);
+            background-color: var(--background-color); /* Black background for entire page */
             margin: 0;
         }
 
@@ -115,7 +115,8 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             margin-bottom: 0.75rem;
-            color: #333333; /* Dark text inside inputs */
+            background-color: #2b2b2b; /* Dark input background */
+            color: #ffffff; /* White text in input */
         }
 
         #contact-form button[type="submit"] {
