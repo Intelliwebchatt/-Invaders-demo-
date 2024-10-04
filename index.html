@@ -23,14 +23,14 @@
     <!-- Inline Critical CSS -->
     <style>
         :root {
-            --primary-color: #000000; /* Black */
-            --secondary-color: #333333; /* Dark Gray */
-            --text-color: #f0f0f0; /* Light Text */
+            --primary-color: #000000; /* Glossy black */
+            --secondary-color: #555555; /* Mid-gray */
+            --text-color: #ffffff; /* White text */
             --background-color: #f8f8f8;
-            --button-color: #555555; /* Mid-gray button */
+            --button-color: #888888; /* Gray button */
             --button-text-color: #ffffff; /* White text for button */
-            --header-gradient: linear-gradient(135deg, #1a1a1a, #4d4d4d); /* Black to Gray gradient */
-            --card-gradient: linear-gradient(135deg, #2b2b2b, #555555); /* Darker gray gradient for depth */
+            --header-gradient: linear-gradient(145deg, #0b0b0b, #1a1a1a, #333333); /* Glossy black gradient */
+            --card-gradient: linear-gradient(135deg, #1a1a1a, #2f2f2f); /* Dark glossy gradient for cards */
         }
 
         body {
@@ -40,72 +40,51 @@
             margin: 0;
         }
 
-        /* Thinner header */
+        /* New sleek header */
         header {
             background: var(--header-gradient);
             color: var(--text-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem; /* Thinned down padding */
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Slightly more prominent shadow */
-        }
-
-        header .header-content {
-            display: flex;
-            align-items: center;
-            max-width: 900px; /* Thinner frame for content */
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        /* Profile image card with thin black border */
-        header .profile-image-card {
-            background-color: white;
-            border-radius: 12px;
-            padding: 5px; /* Reduced padding */
-            margin-right: 20px;
-            display: flex;
-            align-items: center;
-            border: 2px solid black; /* Thin black border */
-        }
-
-        header .profile-image-card img {
-            width: 90px; /* Slightly smaller image */
-            height: 90px;
-            border-radius: 12px;
-            object-fit: cover;
-        }
-
-        header .header-text {
-            text-align: left;
-            padding-left: 20px; /* Added space between text and image */
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Depth effect with shadow */
         }
 
         header h1 {
-            font-size: 2.2rem; /* Slightly smaller header text */
+            font-size: 2.5rem;
             margin: 0.5rem 0;
         }
 
         header p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin: 0;
+            font-weight: 300;
+        }
+
+        /* Profile image centered under the title */
+        header .profile-image {
+            margin-top: 1rem;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #ffffff; /* Thin white border for elegance */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
         }
 
         main {
-            max-width: 900px; /* Narrower main content */
+            max-width: 900px;
             margin: 2rem auto;
             padding: 1rem;
         }
 
-        /* Cards with gradient and darker shadows */
+        /* Cards with glossy dark gradient and stronger shadows */
         .section {
             background: var(--card-gradient);
-            color: var(--text-color);
             padding: 2rem;
             margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Darker shadow */
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+            color: var(--text-color);
         }
 
         .cta {
@@ -126,7 +105,7 @@
         }
 
         .cta button:hover {
-            background-color: #444444; /* Darker gray on hover */
+            background-color: #666666; /* Darker gray on hover */
         }
 
         #contact-form input,
@@ -136,6 +115,7 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             margin-bottom: 0.75rem;
+            color: #333333; /* Dark text inside inputs */
         }
 
         #contact-form button[type="submit"] {
@@ -158,12 +138,12 @@
 
         @media (max-width: 768px) {
             header {
-                flex-direction: column;
+                padding: 1.5rem;
             }
 
-            header .profile-image-card {
-                margin-right: 0;
-                margin-bottom: 15px;
+            header .profile-image {
+                width: 120px;
+                height: 120px;
             }
         }
     </style>
@@ -171,18 +151,10 @@
 
 <body>
     <header>
-        <div class="header-content">
-            <!-- Image Card to the Left with thin black border -->
-            <div class="profile-image-card">
-                <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/refs/heads/main/2024-10-03-19-46-12-519.webp" alt="Hair Stylist Dawn Lanier">
-            </div>
-
-            <!-- Header Text on the Right -->
-            <div class="header-text">
-                <h1>Dawn Lanier</h1>
-                <p>Expert Hair Stylist | Professional Care for Your Unique Style</p>
-            </div>
-        </div>
+        <h1>Dawn Lanier</h1>
+        <p>Expert Hair Stylist | Professional Care for Your Unique Style</p>
+        <!-- Profile image below title -->
+        <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/refs/heads/main/2024-10-03-19-46-12-519.webp" alt="Hair Stylist Dawn Lanier" class="profile-image">
     </header>
 
     <main>
