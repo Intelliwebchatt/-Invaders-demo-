@@ -23,14 +23,14 @@
     <!-- Inline Critical CSS -->
     <style>
         :root {
-            --primary-color: #a52a2a;
-            --secondary-color: #ff4500;
-            --text-color: #333;
+            --primary-color: #000000; /* Black */
+            --secondary-color: #333333; /* Dark Gray */
+            --text-color: #f0f0f0; /* Light Text */
             --background-color: #f8f8f8;
-            --button-color: #ff6347;
-            --button-text-color: #fff;
-            --header-gradient: linear-gradient(135deg, #8b0000, #ff6347);
-            --card-gradient: linear-gradient(135deg, #ffffff, #f0f0f0);
+            --button-color: #555555; /* Mid-gray button */
+            --button-text-color: #ffffff; /* White text for button */
+            --header-gradient: linear-gradient(135deg, #1a1a1a, #4d4d4d); /* Black to Gray gradient */
+            --card-gradient: linear-gradient(135deg, #2b2b2b, #555555); /* Darker gray gradient for depth */
         }
 
         body {
@@ -43,7 +43,7 @@
         /* Thinner header */
         header {
             background: var(--header-gradient);
-            color: white;
+            color: var(--text-color);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -101,6 +101,7 @@
         /* Cards with gradient and darker shadows */
         .section {
             background: var(--card-gradient);
+            color: var(--text-color);
             padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 8px;
@@ -125,7 +126,7 @@
         }
 
         .cta button:hover {
-            background-color: #e55342;
+            background-color: #444444; /* Darker gray on hover */
         }
 
         #contact-form input,
