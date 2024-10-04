@@ -30,6 +30,7 @@
             --button-color: #ff6347;
             --button-text-color: #fff;
             --header-gradient: linear-gradient(135deg, #8b0000, #ff6347);
+            --card-gradient: linear-gradient(135deg, #ffffff, #f0f0f0);
         }
 
         body {
@@ -39,20 +40,21 @@
             margin: 0;
         }
 
+        /* Thinner header */
         header {
             background: var(--header-gradient);
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1.5rem; /* Skinnier header */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem; /* Thinned down padding */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Slightly more prominent shadow */
         }
 
         header .header-content {
             display: flex;
             align-items: center;
-            max-width: 1000px; /* Narrowed content frame */
+            max-width: 900px; /* Thinner frame for content */
             width: 100%;
             justify-content: space-between;
         }
@@ -61,15 +63,15 @@
             background-color: white;
             border-radius: 12px;
             padding: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker card shadow */
             margin-right: 20px;
             display: flex;
             align-items: center;
         }
 
         header .profile-image-card img {
-            width: 100px; /* Smaller image */
-            height: 100px;
+            width: 90px; /* Slightly smaller image */
+            height: 90px;
             border-radius: 12px;
             object-fit: cover;
         }
@@ -90,135 +92,19 @@
         }
 
         main {
-            max-width: 1000px;
+            max-width: 900px; /* Narrower main content */
             margin: 2rem auto;
             padding: 1rem;
         }
 
+        /* Cards with gradient and darker shadows */
         .section {
-            background: white;
+            background: var(--card-gradient);
             padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Darker shadow */
         }
 
         .cta {
-            text-align: center; /* Centered text */
-        }
-
-        .cta button {
-            background-color: var(--button-color);
-            color: var(--button-text-color);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-top: 1rem;
-        }
-
-        .cta button:hover {
-            background-color: #e55342;
-        }
-
-        #contact-form input,
-        #contact-form textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin-bottom: 0.75rem;
-        }
-
-        #contact-form button[type="submit"] {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-            display: block;
-            margin: 0 auto;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-            }
-
-            header .profile-image-card {
-                margin-right: 0;
-                margin-bottom: 15px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <div class="header-content">
-            <!-- Image Card to the Left -->
-            <div class="profile-image-card">
-                <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/refs/heads/main/2024-10-03-19-46-12-519.webp" alt="Hair Stylist Dawn Lanier">
-            </div>
-
-            <!-- Header Text on the Right -->
-            <div class="header-text">
-                <h1>Dawn Lanier</h1>
-                <p>Expert Hair Stylist | Professional Care for Your Unique Style</p>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="section">
-            <h2>About Dawn</h2>
-            <p>With over a decade of experience, Dawn Lanier is your go-to hair stylist for precision cuts, vibrant colors, and styling expertise. Whether you're looking for a fresh new look or routine maintenance, you're in great hands.</p>
-        </section>
-
-        <section class="section cta">
-            <h2>Book Your Appointment</h2>
-            <p>Schedule a session with Dawn today and get ready to transform your hair. Click below to start your booking process!</p>
-            <button>Book Now</button> <!-- Centered button -->
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact Dawn</h2>
-            <form id="contact-form" method="POST" action="#">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="appointment" placeholder="Need Appointment?" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-
-        <section class="section">
-            <h2>Secure Payment</h2>
-            <p>For your convenience, we accept secure online payments through Stripe. You can securely pay for your appointment or hair styling services by clicking the button below.</p>
-            <!-- Stripe Payment Placeholder -->
-            <form action="/your-server-endpoint" method="POST">
-                <button type="submit">Pay with Stripe</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Dawn Lanier | All Rights Reserved</p>
-    </footer>
-
-    <!-- Chatbot Integration -->
-    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="36588"></script>
-</body>
-
-</html>
+            text-align:
