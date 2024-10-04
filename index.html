@@ -107,4 +107,121 @@
         }
 
         .cta {
-            text-align:
+            text-align: center;
+        }
+
+        .cta button {
+            background-color: var(--button-color);
+            color: var(--button-text-color);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 1rem;
+        }
+
+        .cta button:hover {
+            background-color: #e55342;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+        }
+
+        #contact-form button[type="submit"] {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            header .profile-image-card {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Image Card to the Left -->
+            <div class="profile-image-card">
+                <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/refs/heads/main/2024-10-03-19-46-12-519.webp" alt="Hair Stylist Dawn Lanier">
+            </div>
+
+            <!-- Header Text on the Right -->
+            <div class="header-text">
+                <h1>Dawn Lanier</h1>
+                <p>Expert Hair Stylist | Professional Care for Your Unique Style</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>About Dawn</h2>
+            <p>With over a decade of experience, Dawn Lanier is your go-to hair stylist for precision cuts, vibrant colors, and styling expertise. Whether you're looking for a fresh new look or routine maintenance, you're in great hands.</p>
+        </section>
+
+        <section class="section cta">
+            <h2>Book Your Appointment</h2>
+            <p>Schedule a session with Dawn today and get ready to transform your hair. Click below to start your booking process!</p>
+            <button>Book Now</button>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Dawn</h2>
+            <form id="contact-form" method="POST" action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="appointment" placeholder="Need Appointment?" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2>Secure Payment</h2>
+            <p>For your convenience, we accept secure online payments through Stripe. You can securely pay for your appointment or hair styling services by clicking the button below.</p>
+            <!-- Stripe Payment Placeholder -->
+            <form action="/your-server-endpoint" method="POST">
+                <button type="submit">Pay with Stripe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Dawn Lanier | All Rights Reserved</p>
+    </footer>
+
+    <!-- Chatbot Integration -->
+    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="36588"></script>
+</body>
+
+</html>
