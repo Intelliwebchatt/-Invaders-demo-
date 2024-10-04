@@ -42,17 +42,40 @@
         header {
             background: var(--header-gradient);
             color: white;
-            text-align: center;
-            padding: 2rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        header .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+        header .header-content {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        header .profile-image-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header .profile-image-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 12px;
             object-fit: cover;
-            border: 5px solid white;
-            margin-bottom: 1rem;
+        }
+
+        header .header-text {
+            text-align: left;
         }
 
         header h1 {
@@ -62,6 +85,7 @@
 
         header p {
             font-size: 1.2rem;
+            margin: 0;
         }
 
         main {
@@ -120,16 +144,34 @@
             text-align: center;
             padding: 1rem;
         }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            header .profile-image-card {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <!-- Circular Header Image -->
-        <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/refs/heads/main/2024-10-03-19-46-12-519.webp" alt="Hair Stylist Dawn Lanier" class="profile-image">
+        <div class="header-content">
+            <!-- Image Card to the Left -->
+            <div class="profile-image-card">
+                <img src="https://raw.githubusercontent.com/Intelliwebchatt/-Invaders-demo-/refs/heads/main/2024-10-03-19-46-12-519.webp" alt="Hair Stylist Dawn Lanier">
+            </div>
 
-        <h1>Dawn Lanier</h1>
-        <p>Expert Hair Stylist | Professional Care for Your Unique Style</p>
+            <!-- Header Text on the Right -->
+            <div class="header-text">
+                <h1>Dawn Lanier</h1>
+                <p>Expert Hair Stylist | Professional Care for Your Unique Style</p>
+            </div>
+        </div>
     </header>
 
     <main>
