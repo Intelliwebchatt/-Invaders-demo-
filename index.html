@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelley Accounting & Tax Service | Trusted Millbrook Tax Preparation Since 1993</title>
+    <meta name="description" content="Professional tax preparation and accounting services in Millbrook, AL. 32 years of trusted expertise serving individuals and small businesses. IRS e-file authorized.">
+    <meta name="keywords" content="Millbrook tax preparation, Alabama accounting services, IRS e-file, small business bookkeeping, tax planning">
+    <meta name="author" content="Kelley Accounting & Tax Service">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Kelley Accounting & Tax Service - Trusted Millbrook Tax Experts">
+    <meta property="og:description" content="32 years of professional tax and accounting services in Millbrook, Alabama. Family-owned business serving individuals and small businesses.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=630&fit=crop&auto=format">
+    <meta property="og:url" content="https://kelleyaccounting.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2E7D4A">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Custom Properties for Theme System */
+        :root {
+            /* Light Mode Colors */
+            --primary-green: #2E7D4A;
+            --primary-blue: #1E3B82;
+            --accent-gold: #D4AF37;
+            --text-dark: #1A202C;
+            --text-medium: #4A5568;
+            --text-light: #718096;
+            --background-light: #F7FAFC;
+            --background-white: #FFFFFF;
+            --border-light: #E2E8F0;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            
+            /* Typography */
+            --font-primary: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            
+            /* Spacing */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            
+            /* Transitions */
+            --transition-fast: 0.15s ease;
+            --transition-medium: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+        
+        /* Dark Mode Colors */
+        [data-theme="dark"] {
+            --text-dark: #F7FAFC;
+            --text-medium: #E2E8F0;
+            --text-light: #CBD5E0;
+            --background-light: #1A202C;
+            --background-white: #2D3748;
+            --border-light: #4A5568;
+            --shadow-light: rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+            transition: color var(--transition-medium), background-color var(--transition-medium);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+        
+        /* Header Styles */
+        .header {
+            background: var(--background-white);
+            box-shadow: 0 2px 10px var(--shadow-light);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: background-color var(--transition-medium), box-shadow var(--transition-medium);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-green);
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: var(--space-sm);
+            fill: var(--primary-green);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: var(--space-xl);
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            transition: color var(--transition-fast);
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-green);
+        }
+        
+        .nav-cta {
+            background: var(--primary-green);
+            color: white;
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color var(--transition-fast), transform var(--transition-fast);
+        }
+        
+        .nav-cta:hover {
+            background: #245a36;
+            transform: translateY(-1px);
+        }
+        
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-sm);
+            border-radius: 6px;
+            transition: background-color var(--transition-fast);
+        }
+        
+        .theme-toggle:hover {
+            background: var(--border-light);
+        }
+        
+        .theme-icon {
+            width: 20px;
+            height: 20px;
+            fill: var(--text-medium);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-sm);
+        }
+        
+        .hamburger {
+            width: 24px;
+            height: 24px;
+            fill: var(--text-dark);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-green) 100%);
+            color: white;
+            padding: calc(70px + var(--space-3xl)) var(--space-md) var(--space-3xl);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="white" opacity="0.1"/><circle cx="80" cy="40" r="1" fill="white" opacity="0.1"/><circle cx="40" cy="80" r="1.5" fill="white" opacity="0.1"/></svg>');
+            pointer-events: none;
+        }
+        
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+            margin-bottom: var(--space-xl);
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--space-xl);
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--space-md) var(--space-xl);
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: var(--accent-gold);
+            color: var(--text-dark);
+        }
+        
+        .btn-primary:hover {
+            background: #b8941f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+        
+        /* Trust Indicators */
+        .trust-indicators {
+            background: var(--background-white);
+            padding: var(--space-xl) var(--space-md);
+            margin-top: -30px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            text-align: center;
+        }
+        
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: var(--space-lg);
+            border-radius: 12px;
+            transition: transform var(--transition-medium);
+        }
+        
+        .trust-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .trust-icon {
+            width: 60px;
+            height: 60px;
+            fill: var(--primary-green);
+            margin-bottom: var(--space-md);
+        }
+        
+        .trust-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+            color: var(--text-dark);
+        }
+        
+        .trust-description {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--background-light);
+        }
+        
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+        
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .service-card {
+            background: var(--background-white);
+            padding: var(--space-xl);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px var(--shadow-light);
+            transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+            border: 1px solid var(--border-light);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px var(--shadow-light);
+        }
+        
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            fill: var(--primary-green);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .service-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            color: var(--text-dark);
+        }
+        
+        .service-description {
+            color: var(--text-medium);
+            margin-bottom: var(--space-lg);
+            line-height: 1.7;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .service-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-sm);
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+        
+        .service-feature::before {
+            content: '✓';
+            color: var(--primary-green);
+            font-weight: bold;
+            margin-right: var(--space-sm);
+        }
+        
+        .service-cta {
+            color: var(--primary-green);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: color var(--transition-fast);
+        }
+        
+        .service-cta:hover {
+            color: var(--primary-blue);
+        }
+        
+        .service-cta::after {
+            content: '→';
+            margin-left: var(--space-sm);
+            transition: transform var(--transition-fast);
+        }
+        
+        .service-cta:hover::after {
+            transform: translateX(3px);
+        }
+        
+        /* Why Choose Us Section */
+        .why-choose {
+            padding: var(--space-3xl) var(--space-md);
+            background: var(--background-white);
+        }
+        
+        .why-choose-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+        
+        .why-choose-text h2 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: var(--space-lg);
+            color: var(--text-dark);
+        }
+        
+        .why-choose-text p {
+            color: var(--text-medium);
+            margin-bottom: var(--space-lg);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .why-choose-features {
+            display: grid;
+            gap: var(--space-lg);
+        }
+        
+        .feature-item {
+            display: flex;
+            gap: var(--space-md);
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            fill: var(--primary-green);
+            flex-shrink: 0;
+            margin-top: var(--space-xs);
+        }
+        
+        .feature-content h4 {
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+            color: var(--text-dark);
+        }
+        
+        .feature-content p {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+        
+        .why-choose-image {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px var(--shadow-light);
+        }
+        
+        .why-choose-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        /* Contact CTA Section */
+        .contact-cta {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+            color: white;
+            padding: var(--space-3xl) var(--space-md);
+            text-align: center;
+        }
+        
+        .contact-cta h2 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+        }
+        
+        .contact-cta p {
+            font-size: 1.1rem;
+            margin-bottom: var(--space-xl);
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-xl);
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            fill: var(--accent-gold);
+        }
+        
+        .contact-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .contact-details {
+            opacity: 0.9;
+            text-align: center;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: var(--space-3xl) var(--space-md) var(--space-xl);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .footer-section h3 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--space-lg);
+            color: var(--accent-gold);
+        }
+        
+        .footer-section p,
+        .footer-section li {
+            color: #CBD5E0;
+            line-height: 1.7;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: #CBD5E0;
+            transition: color var(--transition-fast);
+        }
+        
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+        
+        .footer-bottom {
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid #4A5568;
+            text-align: center;
+            color: #A0AEC0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .trust-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .why-choose-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 var(--space-sm);
+            }
+            
+            .hero {
+                padding-left: var(--space-sm);
+                padding-right: var(--space-sm);
+            }
+            
+            .services,
+            .why-choose,
+            .contact-cta {
+                padding-left: var(--space-sm);
+                padding-right: var(--space-sm);
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        /* Loading State */
+        .loading {
+            opacity: 0;
+        }
+        
+        /* Lazy Loading */
+        .lazy-load {
+            opacity: 0;
+            transition: opacity var(--transition-medium);
+        }
+        
+        .lazy-load.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 11H7a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1zM13 7h-2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zM17 3h-2a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"/>
+                </svg>
+                Kelley Accounting
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+                <li><a href="/services" class="nav-link">Services</a></li>
+                <li><a href="/resources" class="nav-link">Resources</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+                <li><a href="/contact" class="nav-cta">Schedule Consultation</a></li>
+            </ul>
+            
+            <div style="display: flex; align-items: center; gap: var(--space-sm);">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="theme-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <svg class="hamburger" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">32 Years of Trusted Tax & Accounting Excellence</h1>
+            <p class="hero-subtitle">Professional service meets modern convenience. Serving Millbrook families and businesses with comprehensive accounting solutions since 1993.</p>
+            <div class="hero-cta">
+                <a href="/contact" class="btn btn-primary">Schedule Consultation</a>
+                <a href="/services" class="btn btn-secondary">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="trust-container">
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <h3 class="trust-title">IRS Authorized</h3>
+                <p class="trust-description">Certified e-file provider with direct IRS authorization for secure, fast tax filing</p>
+            </div>
+            
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <h3 class="trust-title">Year-Round Service</h3>
+                <p class="trust-description">Open Monday-Friday, 9am-6pm with extended tax season hours and appointment flexibility</p>
+            </div>
+            
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+                <h3 class="trust-title">Family Owned</h3>
+                <p class="trust-description">Al & Kathy Kelley provide personal attention and build lasting relationships with every client</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Comprehensive Financial Services</h2>
+                <p class="section-subtitle">From individual tax returns to complete business accounting solutions, we provide the expertise your financial success demands.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <h3 class="service-title">Tax Services</h3>
+                    <p class="service-description">Expert tax preparation and planning services for individuals, families, and businesses of all sizes.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">Individual tax return preparation</li>
+                        <li class="service-feature">Business tax filing (all entity types)</li>
+                        <li class="service-feature">IRS e-file authorization</li>
+                        <li class="service-feature">Tax planning and advisory</li>
+                        <li class="service-feature">Amended returns and prior year filings</li>
+                    </ul>
+                    <a href="/services#tax-services" class="service-cta">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    <h3 class="service-title">Accounting Services</h3>
+                    <p class="service-description">Complete bookkeeping and financial management solutions to keep your business running smoothly.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">Monthly bookkeeping and reconciliation</li>
+                        <li class="service-feature">Financial statement preparation</li>
+                        <li class="service-feature">QuickBooks setup and training</li>
+                        <li class="service-feature">Payroll processing and reporting</li>
+                        <li class="service-feature">Year-round accounting support</li>
+                    </ul>
+                    <a href="/services#accounting-services" class="service-cta">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 01-2 2H10a2 2 0 01-2-2V4m8 0H8m0 0v2a2 2 0 002 2h4a2 2 0 002-2V4m-6 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/>
+                    </svg>
+                    <h3 class="service-title">Business Consulting</h3>
+                    <p class="service-description">Strategic guidance and financial consulting to help your business thrive and grow.</p>
+                    <ul class="service-features">
+                        <li class="service-feature">Business startup consulting</li>
+                        <li class="service-feature">Entity formation guidance</li>
+                        <li class="service-feature">Cash flow management</li>
+                        <li class="service-feature">Financial planning and analysis</li>
+                        <li class="service-feature">Growth strategy development</li>
+                    </ul>
+                    <a href="/services#business-consulting" class="service-cta">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="section-container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <h2>Why Millbrook Trusts Kelley Accounting</h2>
+                    <p>For over three decades, we've built our reputation on providing exceptional service, personal attention, and expert financial guidance. When you choose Kelley Accounting, you're choosing a partner committed to your financial success.</p>
+                    
+                    <div class="why-choose-features">
+                        <div class="feature-item">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            <div class="feature-content">
+                                <h4>Trusted Expertise</h4>
+                                <p>32 years of proven experience serving Millbrook's financial needs with integrity and professional excellence.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                            <div class="feature-content">
+                                <h4>Personal Relationships</h4>
+                                <p>As a family-owned business, we know our clients personally and provide individualized attention to every account.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div class="feature-content">
+                                <h4>Year-Round Support</h4>
+                                <p>We're here when you need us most, offering consistent support beyond just tax season for all your financial needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-choose-image">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&auto=format" 
+                         alt="Professional accounting office interior" 
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="section-container">
+            <h2>Ready to Experience the Kelley Difference?</h2>
+            <p>Let's discuss your financial goals and create a plan that works for your unique situation. Contact us today for a consultation.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <div class="contact-title">Call Us Today</div>
+                    <div class="contact-details">
+                        <div>(334) 285-7231</div>
+                        <div>Monday - Friday, 9am - 6pm</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <div class="contact-title">Visit Our Office</div>
+                    <div class="contact-details">
+                        <div>3348 Main Street</div>
+                        <div>Millbrook, Alabama 36054</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <div class="contact-title">Send a Message</div>
+                    <div class="contact-details">
+                        <div>info@kelleyaccounting.com</div>
+                        <div>Quick response guaranteed</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-cta" style="margin-top: var(--space-xl);">
+                <a href="/contact" class="btn btn-primary">Schedule Your Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kelley Accounting & Tax Service</h3>
+                <p>Serving Millbrook, Alabama with trusted accounting and tax services since 1993. Your financial success is our family business.</p>
+                <p><strong>Al Kelley & Kathy Kelley</strong><br>
+                Owners & Tax Professionals</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="/services#tax-services">Tax Preparation</a></li>
+                    <li><a href="/services#tax-services">Business Tax Filing</a></li>
+                    <li><a href="/services#accounting-services">Bookkeeping Services</a></li>
+                    <li><a href="/services#accounting-services">Payroll Processing</a></li>
+                    <li><a href="/services#business-consulting">Business Consulting</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/resources">Tax Resources</a></li>
+                    <li><a href="/resources#tax-calendar">Tax Calendar</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="https://www.irs.gov" target="_blank" rel="noopener">IRS.gov</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong><br>
+                3348 Main Street<br>
+                Millbrook, Alabama 36054</p>
+                
+                <p><strong>Phone:</strong> (334) 285-7231<br>
+                <strong>Fax:</strong> (334) 285-7234</p>
+                
+                <p><strong>Tax Season Hours:</strong><br>
+                Monday - Friday: 9am - 6pm<br>
+                Saturday: By appointment only</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kelley Accounting & Tax Service, Inc. All rights reserved. | 
+            <a href="/privacy-policy">Privacy Policy</a> | 
+            <a href="/terms-of-service">Terms of Service</a></p>
+            <p>IRS Registered Tax Return Preparers | Authorized IRS e-file Provider</p>
+        </div>
+    </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "Kelley Accounting & Tax Service, Inc.",
+        "alternateName": "Kelley Accounting",
+        "description": "Full-service accounting and tax preparation firm serving Millbrook, Alabama for 32 years. Specializing in individual and small business accounting and taxes.",
+        "founder": [
+            {"@type": "Person", "name": "Al Kelley"},
+            {"@type": "Person", "name": "Kathy Kelley"}
+        ],
+        "foundingDate": "1993",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3348 Main Street",
+            "addressLocality": "Millbrook",
+            "addressRegion": "Alabama",
+            "postalCode": "36054",
+            "addressCountry": "US"
+        },
+        "telephone": "+1-334-285-7231",
+        "faxNumber": "+1-334-285-7234",
+        "email": "info@kelleyaccounting.com",
+        "url": "https://kelleyaccounting.com",
+        "openingHours": [
+            "Mo-Fr 09:00-18:00"
+        ],
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "32.4815",
+                "longitude": "-86.3617"
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Accounting and Tax Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tax Preparation",
+                        "description": "Individual and business tax return preparation with IRS e-file authorization"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Bookkeeping Services",
+                        "description": "Monthly bookkeeping, financial statement preparation, and year-round accounting support"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Payroll Processing",
+                        "description": "Complete payroll processing and reporting services for small businesses"
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "150"
+        },
+        "priceRange": "$$"
+    }
+    </script>
+
+    <!-- JavaScript -->
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon');
+        
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 
+                            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+        
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIcon.innerHTML = '<path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>';
+            } else {
+                themeIcon.innerHTML = '<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>';
+            }
+        }
+        
+        // Mobile Menu Toggle (placeholder for future implementation)
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        mobileMenuToggle.addEventListener('click', () => {
+            // Mobile menu functionality would be implemented here
+            console.log('Mobile menu toggle clicked');
+        });
+        
+        // Smooth Scroll for Internal Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Lazy Loading for Images
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        
+        images.forEach(img => {
+            img.classList.add('lazy-load');
+            imageObserver.observe(img);
+        });
+        
+        // Intersection Observer for Animations
+        const animatedElements = document.querySelectorAll('.service-card, .trust-item, .feature-item');
+        const animationObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        animatedElements.forEach(el => {
+            animationObserver.observe(el);
+        });
+        
+        // Contact Form Analytics (placeholder)
+        function trackContactFormSubmission() {
+            // Google Analytics event tracking would go here
+            console.log('Contact form submission tracked');
+        }
+        
+        // Phone Click Tracking
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', () => {
+                // Track phone click events
+                console.log('Phone number clicked');
+            });
+        });
+        
+        // Service Worker Registration (PWA)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        // Performance Monitoring
+        window.addEventListener('load', () => {
+            // Track page load performance
+            const perfData = performance.getEntriesByType('navigation')[0];
+            console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart);
+        });
+    </script>
+</body>
+</html>
